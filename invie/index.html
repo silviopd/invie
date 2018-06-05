@@ -86,9 +86,43 @@
 				<a href="mailto:silviopd01@gmail.com" target="_blank"><strong>Email</strong><span>silviopd01@gmail.com</span></a>
 
 			</div>			
-			<div class="formulario">
-				formulario
-			</div>		
+			<form class="formulario">
+				<label for="nombre">Nombre</label>
+				<input type="text" required id="nombre" name="nombre">
+
+				<label for="email">Email</label>
+				<input type="email" required id="email" name="email">
+
+				<div class="sexo">
+					<label for="mujer">
+						<input type="radio" id="mujer" name="sexo"> Mujer
+					</label>
+					<label for="hombre">
+						<input type="radio" id="hombre" name="sexo"> Hombre
+					</label>
+				</div>
+				
+				<div class="intereses">
+					<label for="cotizacion">
+						<input type="checkbox" id="cotizacion" name="intereses"> Cotización
+					</label>
+					<label for="reclamos">
+						<input type="checkbox" id="reclamos" name="intereses"> Reclamos
+					</label>
+					<label for="comentarios">
+						<input type="checkbox" id="comentarios" name="intereses"> Comentarios
+					</label>
+					<label for="otros">
+						<input type="checkbox" id="otros" name="intereses"> Otros
+					</label>
+				</div>
+
+				<div>
+					<label for="comentarios">Comentarios</label>
+					<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+					<input type="submit" >
+				</div>
+			</form>		
 		</div>
 	</footer>
 </body>
