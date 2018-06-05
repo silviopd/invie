@@ -3,11 +3,24 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Allerta', sans-serif;
 */
 
+/*posición relativa se mueve dentro del contenedor
+  posición absoluta se mueve a su padre proximo relativo
+  posicion fixed se mantiene la imagen aunque muevas el scroll
+*/
+
 body{
 	font-family: 'Allerta', sans-serif;
 	margin: 0;
 }
 
+button{
+	border-radius: 5px;
+	background: #fd324e;
+	color: white;
+	border: none;
+	padding: 7px;
+}
+	
 .titulo {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 70px;
@@ -75,6 +88,7 @@ body{
 	padding: 10px;
 	/*overflow: hidden;*/
 	border: 1px solid #1F313C;
+	border-radius: 8px;
 }
 
 .guitarra ol{
@@ -100,8 +114,3 @@ body{
 .contenedor-guitarra-b{
 	margin-left: 370px;
 }
-
-/*posición relativa se mueve dentro del contenedor
-  posición absoluta se mueve a su padre proximo relativo
-  posicion fixed se mantiene la imagen aunque muevas el scroll
-*/
