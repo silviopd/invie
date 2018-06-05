@@ -48,6 +48,8 @@ body{
 	font-size: 24px;
 	color white;
 	display: inline-block;
+	position: absolute;
+	right: 0;
 }
 
 .menu li{
@@ -59,7 +61,8 @@ body{
 	display: inline-block;
 }
 
-.header {	
+.header {
+	position: relative;	
 }
 
 .contenedor{	
@@ -70,7 +73,7 @@ body{
 .guitarra{
 	margin: 10px;
 	padding: 10px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	border: 1px solid #1F313C;
 }
 
@@ -80,10 +83,14 @@ body{
 
 .derecha{
 	float: right;
+	position: relative;
+	top: -127px;
 }
 
 .izquierda{
 	float: left;
+	position: relative;
+	top: 80px;
 }
 
 .contenedor-guitarra-a{
@@ -93,3 +100,8 @@ body{
 .contenedor-guitarra-b{
 	margin-left: 370px;
 }
+
+/*posición relativa se mueve dentro del contenedor
+  posición absoluta se mueve a su padre proximo relativo
+  posicion fixed se mantiene la imagen aunque muevas el scroll
+*/
